@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   var result = ''
   var times = process.env.TIMES || 5
-  for (i=0; i < times; i++)
+  for (i=0; i < times+5; i++)
     result += cool();
   response.send(result);
 });
